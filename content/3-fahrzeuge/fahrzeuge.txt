@@ -1,0 +1,11 @@
+title: Fahrzeuge
+intro: Eine Auswahl geprüfter Neu- und Gebrauchtwagen, bereit für Probefahrten.
+text: |
+  ## Aktuelle Highlights
+  Wir stellen Ihnen aktuelle Fahrzeuge im Panel als einzelne Artikel unter „Aktuelles“ vor oder pflegen sie direkt als separate Unterseiten.
+
+  • Fahrzeuge sind vorbereitet für Probefahrten
+  • Individuelle Ausstattungslinien auf Anfrage
+  • Zulassungs- und Finanzierungsservice möglich
+----
+template: default

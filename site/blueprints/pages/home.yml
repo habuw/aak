@@ -1,0 +1,28 @@
+title: Startseite
+template: home
+icon: home
+options:
+  delete: false
+
+fields:
+  hero_title:
+    label: Heldentitel
+    type: text
+    width: 1/2
+  hero_text:
+    label: Unterzeile
+    type: textarea
+    width: 1/2
+  services:
+    label: Schwerpunkte
+    type: structure
+    fields:
+      title:
+        label: Titel
+        type: text
+      tagline:
+        label: Kurzinfo
+        type: text
+      text:
+        label: Beschreibung
+        type: textarea

@@ -1,0 +1,16 @@
+title: Artikel
+preset: page
+icon: document
+fields:
+  date:
+    label: Datum
+    type: date
+    time: false
+    default: today
+  intro:
+    label: Vorspann
+    type: textarea
+  text:
+    label: Inhalt
+    type: textarea
+    size: large

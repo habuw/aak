@@ -1,0 +1,27 @@
+title: Kontakt
+icon: phone
+fields:
+  intro:
+    label: Unterzeile
+    type: textarea
+  contact:
+    label: Kontaktinformationen
+    type: textarea
+    buttons: false
+    placeholder: |
+      Auto Aber Klein
+      Musterstraße 1
+      12345 Musterstadt
+      Telefon: 01234 567890
+      E-Mail: info@autoaberklein.de
+  openinghours:
+    label: Öffnungszeiten
+    type: textarea
+    buttons: false
+    placeholder: |
+      Mo–Fr: 08:00–17:00 Uhr
+      Sa: 09:00–13:00 Uhr
+  text:
+    label: Zusatzinformationen
+    type: textarea
+    size: large

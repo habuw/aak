@@ -1,0 +1,22 @@
+title: Website
+
+columns:
+  - width: 1/2
+    fields:
+      title:
+        label: Website-Name
+        type: text
+      footertext:
+        label: Fußzeile
+        type: text
+  - width: 1/2
+    sections:
+      pages:
+        headline: Hauptnavigation
+        type: pages
+        status: all
+        create:
+          - default
+          - aktuelles
+          - kontakt
+        info: "{{ page.template }}"

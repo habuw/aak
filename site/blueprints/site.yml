@@ -14,5 +14,10 @@ columns:
       pages:
         headline: Hauptnavigation
         type: pages
+        status: all
+        create:
+          - default
+          - aktuelles
+          - kontakt
         status: listed
         info: "{{ page.template }}"

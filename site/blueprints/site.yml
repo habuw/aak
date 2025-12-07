@@ -29,4 +29,8 @@ columns:
           - fahrzeuge
           - aktuelles
           - kontakt
+          - default
+          - aktuelles
+          - kontakt
+        status: listed
         info: "{{ page.template }}"

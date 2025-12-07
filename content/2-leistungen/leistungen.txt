@@ -15,3 +15,21 @@ services:
   detail: Einlagerung, Räderwechsel, Zubehör und Umbauten erhalten Sie direkt bei uns.
 ----
 template: leistungen
+intro: Werkstatt, Fahrzeugbeschaffung und Beratung – alle Leistungen sind modular kombinierbar.
+text: |
+  ## Werkstatt & Diagnose
+  • Wartung nach Herstellervorgaben
+  • HU/AU-Vorbereitung und Terminorganisation
+  • Reifen- und Räderservice inklusive Einlagerung
+
+  ## Fahrzeugkauf
+  • Individuelle Fahrzeugrecherche
+  • Finanzierung und Versicherungspartner
+  • Probefahrten kurzfristig möglich
+
+  ## Zusatzservices
+  • Hol- und Bringservice
+  • Mobilitätsgarantie und Ersatzfahrzeuge
+  • Flotten- und Firmenkundenbetreuung
+----
+template: default

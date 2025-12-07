@@ -23,3 +23,8 @@ Eine kompakte Kirby-Installation, die die Navigationsstruktur und Artikelverwalt
 - Navigations-Header, Footer und Grundlayout liegen in `site/snippets` und werden von allen Templates genutzt.
 - Individuelle Darstellungen für Leistungen, Fahrzeuge, Aktuelles, Artikel und Kontakt befinden sich in `site/templates` mit passenden Blueprints unter `site/blueprints/pages`.
 - Farben und Abstände lassen sich in `assets/css/style.css` anpassen.
+- Neue Artikel können im Panel unter der Seite **Aktuelles** angelegt werden (Blueprint `artikel`).
+- Startseitenelemente wie Hero und Schwerpunkte sind als strukturierte Felder im Blueprint `home` gepflegt.
+
+## Design
+Ein klares, reduziertes Layout mit Fokus auf Lesbarkeit. Farben können in `assets/css/style.css` angepasst werden.

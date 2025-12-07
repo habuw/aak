@@ -1,0 +1,15 @@
+title: Startseite
+hero_title: Mobilität aus Leidenschaft
+hero_text: Persönliche Beratung, zuverlässiger Werkstattservice und ausgewählte Fahrzeuge – bei Auto Aber Klein erhalten Sie alles aus einer Hand.
+services:
+- title: Werkstatt & Service
+  tagline: Inspektion, HU-Vorbereitung und schnelle Hilfe im Notfall
+  text: Wir kümmern uns um Wartung, Reparaturen und saisonale Checks für alle gängigen Marken.
+- title: Fahrzeugangebot
+  tagline: Sorgfältig geprüfte Neu- und Gebrauchtwagen
+  text: Entdecken Sie Fahrzeuge, die zu Ihren Anforderungen passen – inklusive Finanzierung und Garantieoptionen.
+- title: Beratung & Betreuung
+  tagline: Ein Team, das zuhört
+  text: Wir beraten transparent, planen Probefahrten und begleiten Sie beim Fahrzeugkauf oder Fuhrpark-Entscheidungen.
+----
+template: home

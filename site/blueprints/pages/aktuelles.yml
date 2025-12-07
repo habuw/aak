@@ -1,0 +1,19 @@
+title: Aktuelles
+template: aktuelles
+icon: news
+options:
+  changeTemplate: false
+  delete: false
+
+fields:
+  intro:
+    label: Unterzeile
+    type: textarea
+sections:
+  articles:
+    headline: Artikel
+    type: pages
+    create: artikel
+    templates:
+      - artikel
+    sortBy: date desc

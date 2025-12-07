@@ -1,0 +1,38 @@
+title: Fahrzeuge
+template: fahrzeuge
+icon: car
+fields:
+  intro:
+    label: Unterzeile
+    type: textarea
+  vehicles:
+    label: Fahrzeugliste
+    type: structure
+    columns:
+      title:
+        width: 1/3
+      specs:
+        width: 1/3
+      price:
+        width: 1/3
+    fields:
+      title:
+        label: Modell
+        type: text
+      specs:
+        label: Ausstattung / Hinweise
+        type: textarea
+      price:
+        label: Preis / Hinweis
+        type: text
+      link:
+        label: Link oder Kontakt
+        type: url
+        help: Optionaler externer Link oder PDF
+sections:
+  subpages:
+    headline: Fahrzeug-Unterseiten
+    type: pages
+    status: all
+    create: default
+    info: "{{ page.template }}"

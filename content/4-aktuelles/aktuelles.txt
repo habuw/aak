@@ -1,0 +1,4 @@
+title: Aktuelles
+intro: Neuigkeiten aus Werkstatt, Showroom und Vertrieb.
+----
+template: aktuelles

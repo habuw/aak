@@ -1,0 +1,7 @@
+title: Neuer Werkstatttest bestanden
+date: 2025-01-15
+intro: Unser Team hat den jährlichen Werkstatttest erneut mit Auszeichnung abgeschlossen.
+text: |
+  Wir investieren fortlaufend in Schulungen, Diagnosegeräte und Qualitätskontrollen. Das Prüfergebnis bestätigt: Auto Aber Klein arbeitet zuverlässig, transparent und nah am Kunden.
+----
+template: artikel

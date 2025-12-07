@@ -1,4 +1,20 @@
 title: Fahrzeuge
+intro: Eine Auswahl geprüfter Fahrzeuge – bereit für Probefahrten und individuelle Anpassungen.
+vehicles:
+- title: Kompaktwagen Trend
+  specs: Klimaanlage, Sitzheizung, Abstandstempomat, Scheckheft gepflegt
+  price: ab 12.900 € inkl. Garantie
+  link: 
+- title: Familienvan Komfort
+  specs: 7 Sitze, Automatik, großes Infotainment, Anhängerkupplung
+  price: 24.500 € | Finanzierung möglich
+  link: 
+- title: Stadtflitzer E
+  specs: Elektro, Reichweite bis 320 km, Schnellladefähigkeit, Wartungspaket inklusive
+  price: ab 199 € mtl. im Leasing
+  link: 
+----
+template: fahrzeuge
 intro: Eine Auswahl geprüfter Neu- und Gebrauchtwagen, bereit für Probefahrten.
 text: |
   ## Aktuelle Highlights

@@ -1,3 +1,6 @@
+title: Startseite
+hero_title: Mobilität aus Leidenschaft
+hero_text: Persönliche Beratung, zuverlässiger Werkstattservice und ausgewählte Fahrzeuge – bei Auto Aber Klein erhalten Sie alles aus einer Hand.
 title: Mobilität aus Leidenschaft
 date: 2025-01-15
 intro: Unser Team hat den jährlichen Werkstatttest erneut mit Auszeichnung abgeschlossen.

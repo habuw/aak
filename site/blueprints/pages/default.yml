@@ -12,3 +12,10 @@ columns:
         label: Inhalt
         type: textarea
         size: large
+sections:
+  children:
+    headline: Unterseiten
+    type: pages
+    status: all
+    create: default
+    info: "{{ page.template }}"

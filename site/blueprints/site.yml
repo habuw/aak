@@ -16,6 +16,19 @@ columns:
         type: pages
         status: all
         create:
+          - home
+          - default
+          - leistungen
+          - fahrzeuge
+          - aktuelles
+          - kontakt
+        templates:
+          - home
+          - default
+          - leistungen
+          - fahrzeuge
+          - aktuelles
+          - kontakt
           - default
           - aktuelles
           - kontakt

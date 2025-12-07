@@ -26,6 +26,8 @@
 <section class="section">
   <h2>Aktuelles aus dem Autohaus</h2>
   <div class="grid">
+    <?php foreach (page('aktuelles')->children()->listed()->limit(3) as $article): ?>
+      <article class="card">
 <?php foreach ($site->children()->listed() as $p): ?>      <article class="card">
         <h3><a href="<?= $article->url() ?>"><?= esc($article->title()) ?></a></h3>
         <p class="meta"><?= $article->date()->toDate('d.m.Y') ?></p>

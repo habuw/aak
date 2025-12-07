@@ -19,5 +19,17 @@
       <?php endif ?>
     </article>
   </div>
+    <div class="card">
+      <h3>Kontakt</h3>
+      <p><?= kirbytext($page->contact()) ?></p>
+    </div>
+    <div class="card">
+      <h3>Öffnungszeiten</h3>
+      <p><?= kirbytext($page->openinghours()) ?></p>
+    </div>
+  </div>
+  <?php if ($page->text()->isNotEmpty()): ?>
+    <?= $page->text()->kirbytext() ?>
+  <?php endif ?>
 </section>
 <?php snippet('footer') ?>

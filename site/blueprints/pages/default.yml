@@ -1,0 +1,21 @@
+title: Standardseite
+
+columns:
+  - width: 1/3
+    fields:
+      intro:
+        label: Einleitung
+        type: textarea
+  - width: 2/3
+    fields:
+      text:
+        label: Inhalt
+        type: textarea
+        size: large
+sections:
+  children:
+    headline: Unterseiten
+    type: pages
+    status: all
+    create: default
+    info: "{{ page.template }}"

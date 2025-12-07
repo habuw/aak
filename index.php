@@ -7,6 +7,7 @@ if (!file_exists($autoload)) {
 }
 
 require $autoload;
+require __DIR__ . '/vendor/autoload.php';
 
 use Kirby\Cms\App as Kirby;
 

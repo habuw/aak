@@ -1,0 +1,7 @@
+/vendor/
+/media/
+/site/cache/
+/site/sessions/
+.env
+.DS_Store
+Thumbs.db

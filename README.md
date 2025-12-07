@@ -7,56 +7,11 @@ Eine kompakte Kirby-Installation, die die Navigationsstruktur und Artikelverwalt
    ```bash
    composer install
    ```
-   > Hinweis bei fehlendem Internet/Proxy-Problemen:
-   > - Lade das aktuelle Kirby-Release von <https://github.com/getkirby/cms/releases> herunter.
-   > - Entpacke den Ordner `kirby` direkt ins Projekt (Pfad muss `kirby/config/setup.php` enthalten).
-   > - Lege einen passenden `vendor/autoload.php` aus einer funktionierenden Installation ab oder generiere ihn mit Composer.
-   > - Starte den Server anschließend neu. Ohne diese Dateien liefert `index.php` einen Hinweisbildschirm statt einer Fatal Error Meldung.
-2. Lokalen Server starten. Empfohlen: das mitgelieferte Script nutzen, damit immer aus dem Projektstamm gestartet wird:
+2. Lokalen Server starten, z. B. mit PHPs Built-in Server:
    ```bash
-   ./serve.sh
+   php -S localhost:8000 kirby/router.php
    ```
-   Alternativ: manueller Start mit PHPs Built-in Server (ebenfalls im Projektstamm):
-   ```bash
-   php -S localhost:8000 router.php
-   ```
-   Das Script und der Router liegen im Projektstamm und rufen ohne Umwege die `index.php` auf – es ist also keine zusätzliche
-   Datei unter `kirby/` mehr nötig. Wird der Server aus dem falschen Verzeichnis gestartet, erscheint ein Hinweis statt einer
-   PHP-Fehlermeldung.
-
-   **Typischer Fehler:** `Failed opening required 'kirby/config/setup.php'`
-
-   Dieser Hinweis bedeutet, dass der Kirby-Core im Ordner `kirby/` fehlt oder eine unvollständige Composer-Installation vorliegt.
-
-   1. Lösche einen eventuell teilinstallierten `vendor/`-Ordner komplett.
-   2. Führe `composer install` im Projektstamm aus **oder** kopiere den kompletten Kirby-Ordner manuell ins Projektverzeichnis (siehe Abschnitt „Entwicklung“ Schritt 1).
-3. Prüfe, dass danach die Datei `kirby/config/setup.php` existiert.
-4. In diesem Repository liegt ein Platzhalter unter `vendor/` bei, der lediglich eine Hinweis-Seite ausgibt. Sobald der echte Kirby-Core installiert ist, kannst du den Platzhalter-Ordner löschen oder überschreiben.
-   4. Starte den Server erneut mit `php -S localhost:8000 router.php`.
 3. Panel einrichten unter `http://localhost:8000/panel` und einen Admin-Benutzer anlegen.
-4. Falls ein Branch versehentlich entfernt wurde, prüfe lokal mit `git branch -a`, ob `work` noch vorhanden ist. Andernfalls kannst du ihn aus dem Remote neu auschecken (z. B. `git fetch origin && git checkout work`).
-
-### Schneller Selbsttest
-
-Wenn du unsicher bist, ob dein lokales Arbeitsverzeichnis korrekt aussieht (z. B. nach einem Merge oder Pull), prüfe es so:
-
-```bash
-php healthcheck.php
-```
-
-Die Ausgabe zeigt für Kern-Dateien (Router, Autoloader, Kirby-Setup, Content) an, ob sie vorhanden sind. Rufe die Datei im Browser auf (`http://localhost:8000/healthcheck.php`), falls du schon einen lokalen Server gestartet hast.
-
-### Lokale Dateien mit dem Remote vergleichen
-- Hole den aktuellen Stand des Remotes ab:
-  ```bash
-  git fetch origin
-  ```
-- Prüfe, ob lokale Änderungen gegenüber dem Remote-Branch (z. B. `work`) vorhanden sind:
-  ```bash
-  git status -sb
-  git diff origin/work..work
-  ```
-  `git status -sb` zeigt dir unverfolgte/angepasste Dateien an, `git diff origin/work..work` listet den Unterschied zum Remote-Zweig. Ersetze `work` durch den gewünschten Branch (z. B. `main`), falls du einen anderen Vergleich brauchst.
 
 ## Inhalte pflegen
 - Die Hauptnavigation ist über die Top-Level-Seiten „Unternehmen“, „Leistungen“, „Fahrzeuge“, „Aktuelles“ und „Kontakt“ abgebildet.
@@ -68,3 +23,8 @@ Die Ausgabe zeigt für Kern-Dateien (Router, Autoloader, Kirby-Setup, Content) a
 - Navigations-Header, Footer und Grundlayout liegen in `site/snippets` und werden von allen Templates genutzt.
 - Individuelle Darstellungen für Leistungen, Fahrzeuge, Aktuelles, Artikel und Kontakt befinden sich in `site/templates` mit passenden Blueprints unter `site/blueprints/pages`.
 - Farben und Abstände lassen sich in `assets/css/style.css` anpassen.
+- Neue Artikel können im Panel unter der Seite **Aktuelles** angelegt werden (Blueprint `artikel`).
+- Startseitenelemente wie Hero und Schwerpunkte sind als strukturierte Felder im Blueprint `home` gepflegt.
+
+## Design
+Ein klares, reduziertes Layout mit Fokus auf Lesbarkeit. Farben können in `assets/css/style.css` angepasst werden.

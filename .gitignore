@@ -1,11 +1,4 @@
-/vendor/*
-!/vendor/autoload.php
-!/vendor/README.md
-/kirby/*
-!/kirby/router.php
-!/kirby/config/
-/kirby/config/*
-!/kirby/config/setup.php
+/vendor/
 /media/
 /site/cache/
 /site/sessions/

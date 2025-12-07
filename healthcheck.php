@@ -9,7 +9,7 @@ $checks = [
     'kirby/router.php' => is_file($base . '/kirby/router.php'),
     'composer.json' => is_file($base . '/composer.json'),
     'vendor/autoload.php' => is_file($base . '/vendor/autoload.php'),
-    'kirby/config/setup.php' => is_file($base . '/kirby/config/setup.php'),
+    'vendor/kirby/config/setup.php' => is_file($base . '/vendor/kirby/config/setup.php'),
     'content directory' => is_dir($base . '/content'),
     'site directory' => is_dir($base . '/site'),
 ];
@@ -37,8 +37,8 @@ if (php_sapi_name() === 'cli') {
     echo str_repeat('=', strlen($intro)), "\n\n";
     echo implode("\n", $lines), "\n\n";
     echo "Recommendation: start the built-in server via: {$recommendedCommand}\n";
-    if (!$checks['kirby/config/setup.php'] || !$checks['vendor/autoload.php']) {
-        echo "Note: install dependencies with 'composer install' or copy Kirby into the project root (path kirby/config/setup.php).\n";
+    if (!$checks['vendor/kirby/config/setup.php'] || !$checks['vendor/autoload.php']) {
+        echo "Note: install dependencies with 'composer install' or copy Kirby to vendor/kirby/.\n";
     }
     exit($allOk ? 0 : 1);
 }
@@ -72,7 +72,7 @@ header('Content-Type: text/html; charset=utf-8');
     </ul>
     <div class="box">
         <p><strong>Empfohlenes Startkommando:</strong> <code><?php echo htmlspecialchars($recommendedCommand, ENT_QUOTES, 'UTF-8'); ?></code></p>
-        <p>Fehlt <code>kirby/</code> oder <code>vendor/autoload.php</code>, bitte <code>composer install</code> ausführen oder das Kirby-Paket manuell ins Projekt kopieren (Pfad muss <code>kirby/config/setup.php</code> enthalten).</p>
+        <p>Fehlt <code>vendor/kirby/</code> oder <code>vendor/autoload.php</code>, bitte <code>composer install</code> ausführen oder das Kirby-Paket manuell nach <code>vendor/kirby/</code> kopieren.</p>
     </div>
 </body>
 </html>

@@ -3,6 +3,23 @@
 $autoload = __DIR__ . '/vendor/autoload.php';
 $kirbySetup = __DIR__ . '/vendor/kirby/config/setup.php';
 
+if (!is_file($kirbySetup)) {
+    http_response_code(503);
+    echo '<!doctype html><html><head><meta charset="utf-8"><title>Kirby fehlt</title>';
+    echo '<style>body{font-family:Arial,Helvetica,sans-serif;max-width:720px;margin:3rem auto;padding:0 1.5rem;line-height:1.6;}</style>';
+    echo '</head><body>';
+    echo '<h1>Kirby-Core nicht gefunden</h1>';
+    echo '<p>Der Ordner <code>vendor/kirby/</code> fehlt oder ist unvollständig. Dadurch entsteht der Fehler '; 
+    echo '<code>Failed opening required "vendor/kirby/config/setup.php"</code>.</p>';
+    echo '<ol>';
+    echo '<li>Falls noch Reste in <code>vendor/</code> liegen, lösche den Ordner komplett.</li>';
+    echo '<li>Installiere die Abhängigkeiten neu mit <code>composer install</code> oder kopiere den kompletten Kirby-Ordner manuell nach <code>vendor/kirby/</code>.</li>';
+    echo '<li>Stelle sicher, dass <code>vendor/kirby/config/setup.php</code> danach existiert.</li>';
+    echo '</ol>';
+    echo '</body></html>';
+    return;
+}
+
 if (!is_file($autoload) || !is_file($kirbySetup)) {
     http_response_code(503);
     echo '<!doctype html><html><head><meta charset="utf-8"><title>Kirby fehlt</title>';

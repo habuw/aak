@@ -19,6 +19,15 @@ Eine kompakte Kirby-Installation, die die Navigationsstruktur und Artikelverwalt
    Der Router liegt jetzt direkt im Projektstamm und ruft ohne Umwege die `index.php` auf – es ist also keine zusätzliche Datei
    unter `kirby/` mehr nötig. Wird der Server aus dem falschen Verzeichnis gestartet, erscheint ein Hinweis statt einer PHP-
    Fehlermeldung.
+
+   **Typischer Fehler:** `Failed opening required 'vendor/kirby/config/setup.php'`
+
+   Dieser Hinweis bedeutet, dass der Kirby-Core in `vendor/kirby/` fehlt oder eine unvollständige Composer-Installation vorliegt.
+
+   1. Lösche einen eventuell teilinstallierten `vendor/`-Ordner komplett.
+   2. Führe `composer install` im Projektstamm aus **oder** kopiere den kompletten Kirby-Ordner manuell nach `vendor/kirby/` (siehe Abschnitt „Entwicklung“ Schritt 1).
+   3. Prüfe, dass danach die Datei `vendor/kirby/config/setup.php` existiert.
+   4. Starte den Server erneut mit `php -S localhost:8000 router.php`.
 3. Panel einrichten unter `http://localhost:8000/panel` und einen Admin-Benutzer anlegen.
 4. Falls ein Branch versehentlich entfernt wurde, prüfe lokal mit `git branch -a`, ob `work` noch vorhanden ist. Andernfalls kannst du ihn aus dem Remote neu auschecken (z. B. `git fetch origin && git checkout work`).
 

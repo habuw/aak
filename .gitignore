@@ -1,0 +1,14 @@
+/vendor/*
+!/vendor/autoload.php
+!/vendor/README.md
+!/vendor/kirby/
+/vendor/kirby/*
+!/vendor/kirby/config/
+/vendor/kirby/config/*
+!/vendor/kirby/config/setup.php
+/media/
+/site/cache/
+/site/sessions/
+.env
+.DS_Store
+Thumbs.db

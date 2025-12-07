@@ -1,0 +1,10 @@
+title: Unternehmen
+intro: Auto Aber Klein ist ein familiengeführter Betrieb, der Beratung, Werkstatt und Fahrzeugverkauf vereint.
+text: |
+  ## Unsere Geschichte
+  Seit über 20 Jahren kümmern wir uns um zuverlässige Mobilität in der Region. Wir kombinieren Handwerk mit moderner Diagnosetechnik und legen Wert auf nachvollziehbare Empfehlungen.
+
+  ## Team & Haltung
+  Wir hören zu, erklären transparent und begleiten Sie Schritt für Schritt – vom ersten Gespräch über die Probefahrt bis zur Auslieferung oder Reparatur.
+----
+template: default

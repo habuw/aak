@@ -1,0 +1,17 @@
+title: Leistungen
+intro: Wir verbinden Werkstatt, Fahrzeugverkauf und Beratung – alles unter einem Dach.
+services:
+- title: Werkstatt & Diagnose
+  tagline: Wartung, HU/AU-Vorbereitung und Fehlersuche
+  detail: Moderne Ausstattung und erfahrene Mechatroniker sichern kurze Standzeiten und transparente Kosten.
+- title: Fahrzeugverkauf
+  tagline: Geprüfte Neu- und Gebrauchtwagen
+  detail: Von der Beratung über die Probefahrt bis zur Auslieferung begleiten wir Sie mit Finanzierung und Garantieoptionen.
+- title: Flotten- & Firmenservice
+  tagline: Mobilität für Teams
+  detail: Wir planen Wartungsfenster, stellen Ersatzfahrzeuge bereit und beraten zu effizienten Fuhrpark-Lösungen.
+- title: Zubehör & Reifen
+  tagline: Saisonbereit unterwegs
+  detail: Einlagerung, Räderwechsel, Zubehör und Umbauten erhalten Sie direkt bei uns.
+----
+template: leistungen

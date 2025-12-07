@@ -1,5 +1,12 @@
 <?php
 
+$autoload = __DIR__ . '/vendor/autoload.php';
+
+if (!file_exists($autoload)) {
+    die('Bitte vor dem Start "composer install" ausführen, damit Kirby geladen werden kann.');
+}
+
+require $autoload;
 require __DIR__ . '/vendor/autoload.php';
 
 use Kirby\Cms\App as Kirby;
